@@ -16,6 +16,8 @@
 		EB2199F32C93F38B00059548 /* AuthNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2199F22C93F38B00059548 /* AuthNetworkManager.swift */; };
 		EB2199F52C93F55E00059548 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2199F42C93F55E00059548 /* Login.swift */; };
 		EB2199F72C9412A200059548 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2199F62C9412A200059548 /* Home.swift */; };
+		EB2199F92C94269100059548 /* Splashscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2199F82C94269100059548 /* Splashscreen.swift */; };
+		EB2199FC2C94284A00059548 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2199FB2C94284A00059548 /* Color+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		EB2199F22C93F38B00059548 /* AuthNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManager.swift; sourceTree = "<group>"; };
 		EB2199F42C93F55E00059548 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		EB2199F62C9412A200059548 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EB2199F82C94269100059548 /* Splashscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splashscreen.swift; sourceTree = "<group>"; };
+		EB2199FB2C94284A00059548 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 		EB2199DC2C93EF9F00059548 /* AuthenticationFlow */ = {
 			isa = PBXGroup;
 			children = (
+				EB2199FA2C94283300059548 /* Extensions */,
 				EB2199ED2C93F01000059548 /* Controller */,
 				EB2199EC2C93F00C00059548 /* View */,
 				EB2199EB2C93F00700059548 /* Model */,
@@ -94,6 +99,7 @@
 			children = (
 				EB2199F42C93F55E00059548 /* Login.swift */,
 				EB2199F62C9412A200059548 /* Home.swift */,
+				EB2199F82C94269100059548 /* Splashscreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,6 +110,14 @@
 				EB2199F22C93F38B00059548 /* AuthNetworkManager.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB2199FA2C94283300059548 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB2199FB2C94284A00059548 /* Color+Hex.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2199F92C94269100059548 /* Splashscreen.swift in Sources */,
 				EB2199E02C93EF9F00059548 /* ContentView.swift in Sources */,
 				EB2199F32C93F38B00059548 /* AuthNetworkManager.swift in Sources */,
 				EB2199F12C93F07600059548 /* TokenManager.swift in Sources */,
@@ -183,6 +198,7 @@
 				EB2199DE2C93EF9F00059548 /* AuthenticationFlowApp.swift in Sources */,
 				EB2199EF2C93F02200059548 /* User.swift in Sources */,
 				EB2199F72C9412A200059548 /* Home.swift in Sources */,
+				EB2199FC2C94284A00059548 /* Color+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
