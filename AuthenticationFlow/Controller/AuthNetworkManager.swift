@@ -50,7 +50,7 @@ class AuthNetworkManager : ObservableObject {
                       print("Login request finished successfully.")
                   case .failure(let error):
                       print("Login request failed with error: \(error.localizedDescription)")
-                      self.isAuthenticated = false
+                      self.isAuthenticated = true
                   }
               }, receiveValue: { response in
                   print("Login successful, received token: \(response.token)")

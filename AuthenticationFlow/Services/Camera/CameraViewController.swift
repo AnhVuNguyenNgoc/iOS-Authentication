@@ -9,7 +9,7 @@
 import AVFoundation
 import SwiftUI
 
-struct CameraView: UIViewControllerRepresentable {
+struct CameraViewController: UIViewControllerRepresentable {
     func makeCoordinator() -> Coordinator {
         Coordinator(self, didFinishProcessingPhoto: didFinishProcessingPhoto)
     }
@@ -41,10 +41,10 @@ struct CameraView: UIViewControllerRepresentable {
     }
     
     class Coordinator: NSObject, AVCapturePhotoCaptureDelegate{
-        let parent: CameraView
+        let parent: CameraViewController
         private var didFinishProcessingPhoto: (Result<AVCapturePhoto,Error>) ->()
         
-        init(_ parent: CameraView,
+        init(_ parent: CameraViewController,
              didFinishProcessingPhoto: @escaping (Result<AVCapturePhoto,Error>) ->()){
             self.parent = parent
             self.didFinishProcessingPhoto = didFinishProcessingPhoto

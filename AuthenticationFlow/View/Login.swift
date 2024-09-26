@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct Login: View {
-    @State private var username: String = ""
-    @State private var password: String = ""
+    @State private var username: String = "emilys"
+    @State private var password: String = "emilyspass"
     @ObservedObject var authManager = AuthNetworkManager()
     
     var body: some View {
