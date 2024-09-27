@@ -7,7 +7,10 @@
 
 import SwiftUI
 
-struct Splashscreen: View {
+struct SplashScreen: View {
+    @Binding var currentView: AppView
+    private let delaySplashScreen: DispatchTime = .now() + 2
+    
     var body: some View {
         ZStack{
             // Background color
@@ -24,14 +27,21 @@ struct Splashscreen: View {
                 
                 Text("ANH VU").font(.largeTitle)
            }
+        } .onAppear {
+            // Simulate a loading delay
+            DispatchQueue.main.asyncAfter(deadline: delaySplashScreen) { // Adjust duration as needed
+                withAnimation {
+                    currentView = .onboarding
+                }
+            }
         }
      
     }
 }
 
-struct Splashscreen_Previews: PreviewProvider {
+struct SplashScreen_Previews: PreviewProvider {
     static var previews: some View {
-        Splashscreen()
+        SplashScreen(currentView: .constant(.onboarding))
     }
 }
 

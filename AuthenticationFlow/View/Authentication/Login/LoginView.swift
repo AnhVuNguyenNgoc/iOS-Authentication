@@ -7,10 +7,13 @@
 
 import SwiftUI
 
-struct Login: View {
+struct LoginView: View {
     @State private var username: String = "emilys"
     @State private var password: String = "emilyspass"
     @ObservedObject var authManager = AuthNetworkManager()
+    
+    @Binding var currentView: AppView
+    
     
     var body: some View {
         NavigationStack {
@@ -25,6 +28,7 @@ struct Login: View {
                 
                 Button("Login") {
                     authManager.login(username: username, password: password)
+                    currentView = .home
                 }
                 .padding()
                 
@@ -47,8 +51,8 @@ struct Login: View {
     }
 }
 
-struct Login_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        Login()
+        LoginView(currentView: .constant(.home))
     }
 }

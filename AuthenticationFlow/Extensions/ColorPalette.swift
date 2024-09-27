@@ -29,4 +29,12 @@ struct ColorPalette {
         static let darkRed750 = Color(red: 0.61, green: 0.18, blue: 0.18)
         static let darkRed900 = Color(red: 0.43, green: 0.12, blue: 0.12)
     }
+    
+    struct Typography {
+           static let title = Color(red: 0.0, green: 0.0, blue: 0.0) // Black
+           static let subTitle = Color(red: 0.2, green: 0.2, blue: 0.2) // Dark Gray
+           static let body = Color(red: 0.3, green: 0.3, blue: 0.3) // Gray
+           static let caption = Color(red: 0.4, green: 0.4, blue: 0.4) // Light Gray
+           static let white = Color(red: 1.0, green: 1.0, blue: 1.0) // White
+       }
 }

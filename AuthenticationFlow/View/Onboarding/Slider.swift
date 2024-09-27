@@ -24,6 +24,7 @@ struct Slider: View {
             Text(description) .font(.body)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 40)
+                .foregroundColor(ColorPalette.Typography.caption)
      
         }
     }
